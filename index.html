@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width">
+
+    <title>Szyfr Polialfabetyczny</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<h1 class="title1"><b>Szyfr Podstawieniowy Monoalfabetyczny</b></h1>
+
+<div id="mainContainer" class="col-md-12 row">
+    <div class="col-md-6">
+        <h1 style="color: white"><b>Tekst Zaszyfrowany</b></h1>
+        <div class="containerWithText" id="encodedText"></div>
+    </div>
+
+    <div class="col-md-6">
+        <h1 style="color: white"><b>Tekst Odszyfrowany</b></h1>
+        <div class="containerWithText" id="decodedText"></div>
+    </div>
+</div>
+
+<div class="center">
+    <button class="btn btn-primary btnDecode" onclick="decrypt()"><b>ODSZYFRUJ</b></button>
+</div>
+
+
+<script src="main.js"></script>
+</body>
+</html>
